@@ -116,7 +116,7 @@ Example Table
 
 ## 8. Caching Strategy
 
-- Cache-aside / write-through
+- Caching patterns (e.g., cache-aside, read-through, write-through, write-back, write-around)
 - TTL strategy
 - Cache keys
 
