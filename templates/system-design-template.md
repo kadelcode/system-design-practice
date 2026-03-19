@@ -53,7 +53,7 @@ Design a system that...
 - Application Servers
 - Cache (e.g., Redis, Memcached)
 - Database
-- Message Queue (Kafka)
+- Message Queue (e.g., Kafka, RabbitMQ)
 
 ---
 
