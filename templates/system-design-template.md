@@ -147,7 +147,7 @@ Example Table
 | Failure                  | Impact                  | Mitigation            |
 |--------------------------|-------------------------|-----------------------|
 | Cache down               | Slow reads              | Fallback to DB        |
-| Db down                  | System halt             | Replication           |
+| DB down (master)         | Write operations fail   | Failover to replica   |
 
 ---
 
