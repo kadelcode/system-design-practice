@@ -155,6 +155,9 @@ Example Table
 - Authentication / Authorization
 - Rate limiting
 - Input validation
+- Data encryption (at rest & in transit)
+- Secrets management
+- Protection against common vulnerabilities (e.g., OWASP Top 10)
 
 ---
 
