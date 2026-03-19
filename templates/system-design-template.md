@@ -51,7 +51,7 @@ Design a system that...
 - Client
 - Load Balancer
 - Application Servers
-- Cache (Redis)
+- Cache (e.g., Redis, Memcached)
 - Database
 - Message Queue (Kafka)
 
