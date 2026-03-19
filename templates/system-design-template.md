@@ -65,7 +65,7 @@ Step-by-step:
 1. Client -> API
 2. Validation
 3. DB write
-4. Cache update
+4. Cache update / invalidation
 
 ---
 
