@@ -50,9 +50,6 @@ These are must-have for a working URL shortener:
 6. QR Code Generation
     - Generate QR codes for shortened URLs.
 
-7. Rate Limiting
-    - Prevent abuse by limiting number of requests per user/IP.
-
 ---
 
 ## Non-Functional Requirements
@@ -74,20 +71,25 @@ These are must-have for a working URL shortener:
 5. Durability
     - Stored URLs must not be lost (persistent storage).
 
+6. Security & Abuse Prevention
+    - Enforce HTTPs for all requests
+    - Validate and block malicious URLs (phishing, malware)
+    - Implement rate limiting to prevent abuse and ensure system stability.
+
+7. Observability
+    - Logging (request logs, errors)
+    - Monitoring (latency, traffic, error rates)
+    - Alerting (on failures, downtime, anomalies)
+
+
 ### Optional (Advanced Improvements)
-1. Security
-    - Prevent malicious URLs (phishing, malware).
-    - HTTPS support.
 
-2. Observability
-    - Logging, monitoring, and alerting.
-
-3. Consistency
+1. Consistency
     - Eventual consistency is acceptable for analytics.
     - Strong consistency required for URL mapping.
 
-4. Cost Efficiency
+2. Cost Efficiency
     - Optimize storage and compute for large-scale usage.
 
-5. Maintainability
+3. Maintainability
     - Clean architecture for easy updates and feature additions.
