@@ -206,7 +206,8 @@ Example Table
 - Stateless services
 
 ### Database Scaling
-- Replicas, sharding
+- Read replicas
+- Sharding strategy
 
 ### Other
 - CDN
