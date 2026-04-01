@@ -106,6 +106,7 @@ Design a system that...
 
 - Daily storage:
 - Yearly storage:
+- Total storage (e.g., 5 years):
 
 ---
 
