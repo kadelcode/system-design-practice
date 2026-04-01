@@ -211,7 +211,7 @@ Example Table
 
 ### Other
 - CDN
-- Async processing
+- Async processing (e.g., Message Queues, Pub/Sub)
 
 ---
 
