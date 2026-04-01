@@ -78,6 +78,7 @@ Design a system that...
 - Daily active users:
 - Actions per user per day:
 - Average data size per record:
+- Data retention period:
 
 ---
 
