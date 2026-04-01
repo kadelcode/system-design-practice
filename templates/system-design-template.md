@@ -1,3 +1,45 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [System Design: [System Name]](#system-design-system-name)
+  - [Problem Statement](#problem-statement)
+  - [1. Functional Requirements](#1-functional-requirements)
+  - [2. Non-Functional Requirements](#2-non-functional-requirements)
+  - [3. Scale Estimation](#3-scale-estimation)
+    - [Assumptions](#assumptions)
+    - [Traffic Estimation](#traffic-estimation)
+    - [QPS Calculation](#qps-calculation)
+    - [Read/Write Ratio](#readwrite-ratio)
+    - [Storage Estimation](#storage-estimation)
+    - [Peak Traffic](#peak-traffic)
+    - [Key Observations](#key-observations)
+  - [4. High-Level Architecture](#4-high-level-architecture)
+    - [Components](#components)
+  - [5. Data Flow (VERY IMPORTANT)](#5-data-flow-very-important)
+    - [Write Flow](#write-flow)
+    - [Read Flow](#read-flow)
+  - [6. API Design](#6-api-design)
+    - [Create Resource](#create-resource)
+      - [POST /api/v1/resource](#post-apiv1resource)
+      - [Get Resource](#get-resource)
+  - [7. Database Design](#7-database-design)
+    - [Indexing Strategy](#indexing-strategy)
+  - [8. Scaling & Performance Strategy](#8-scaling--performance-strategy)
+    - [Caching](#caching)
+    - [Horizontal Scaling](#horizontal-scaling)
+    - [Database Scaling](#database-scaling)
+    - [Other](#other)
+  - [9. Bottlenecks & Failure Handling](#9-bottlenecks--failure-handling)
+    - [Potential Bottlenecks](#potential-bottlenecks)
+    - [Failure Scenarios](#failure-scenarios)
+  - [10. Security Considerations](#10-security-considerations)
+  - [11. Tradeoffs](#11-tradeoffs)
+  - [12. Improvements](#12-improvements)
+  - [13. Summary](#13-summary)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # System Design: [System Name]
 
 ---
@@ -8,23 +50,7 @@ Design a system that...
 
 ---
 
-## 1. Scale Estimation
-
-### Assumptions
-
-- Daily active users:
-- Request per second:
-- Read/Write ratio
-
-### Back-of-the-envelope Calculations
-
-- Reads/sec:
-- Writes/sec:
-- Storage/year:
-
----
-
-## 2. Functional Requirements
+## 1. Functional Requirements
 
 - 
 - 
@@ -32,14 +58,65 @@ Design a system that...
 
 ---
 
-## 3. Non-Functional Requirements
+## 2. Non-Functional Requirements
 
 - Scalability
 - Availability
 - Reliability
 - Low latency
 - Consistency (if applicable)
+- Security
+- Observability
 
+---
+
+## 3. Scale Estimation
+
+### Assumptions
+
+- Daily active users:
+- Actions per user per day:
+- Average data size per record:
+
+---
+
+### Traffic Estimation
+
+- Writes/day:
+- Reads/day:
+
+---
+
+### QPS Calculation
+
+- Write QPS:
+- Read QPS:
+
+---
+
+### Read/Write Ratio
+
+- e.g., 10:1 (read-heavy)
+
+---
+
+### Storage Estimation
+
+- Daily storage:
+- Yearly storage:
+
+---
+
+### Peak Traffic
+
+- Peak QPS (e.g., 5x average):
+
+---
+
+### Key Observations
+
+- (e.g., Read-heavy -> caching required)
+- (e.g., High storage growth -> scalable DB)
 ---
 
 ## 4. High-Level Architecture
@@ -114,30 +191,27 @@ Example Table
 
 ---
 
-## 8. Caching Strategy
+## 8. Scaling & Performance Strategy
 
+
+### Caching
 - Caching patterns (e.g., cache-aside, read-through, write-through, write-back, write-around)
 - TTL strategy
 - Cache keys
 
----
-
-## 9. Scaling Strategy
-
-### Horizontal scaling
+### Horizontal Scaling
 - Stateless services
 
 ### Database Scaling
-- Read replicas
-- Sharding strategy
+- Replicas, sharding
 
 ### Other
 - CDN
-- Async processing (queues)
+- Async processing
 
 ---
 
-## 10. Bottlenecks & Failure Handling
+## 9. Bottlenecks & Failure Handling
 
 ### Potential Bottlenecks
 - 
@@ -151,7 +225,7 @@ Example Table
 
 ---
 
-## 11. Security Considerations
+## 10. Security Considerations
 - Authentication / Authorization
 - Rate limiting
 - Input validation
@@ -161,20 +235,20 @@ Example Table
 
 ---
 
-## 12. Tradeoffs
+## 11. Tradeoffs
 | Decision              | Why               | Downsides             |
 |-----------------------|-------------------|-----------------------|
 |                       |                   |                       |
 
 ---
 
-## 13. Improvements
+## 12. Improvements
 
 - 
 - 
 - 
 
-## 14. Summary
+## 13. Summary
 
 - Key insights
 - What you'd improve in V2
