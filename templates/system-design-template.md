@@ -65,6 +65,7 @@ Design a system that...
 - Reliability
 - Low latency
 - Consistency (if applicable)
+- Durability
 - Security
 - Observability
 
