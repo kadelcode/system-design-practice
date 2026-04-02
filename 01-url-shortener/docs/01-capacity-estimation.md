@@ -150,6 +150,9 @@ System must be designed to handle peak traffic, not average load.
 1. Read-heavy system
     - 10:1 read-to-write ratio
     - Strong need for caching (e.g., Redis)
+        - Cache hot URLs (~20% of total URLs based on access patterns)
+        - Estimated cache size ~ 120MB
+        - Actual size may vary depending on traffic skew (hot URLs)
 
 2. Moderate write traffic
     - Can be handled by a single database initially
