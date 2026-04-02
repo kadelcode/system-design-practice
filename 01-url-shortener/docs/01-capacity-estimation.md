@@ -136,7 +136,7 @@ System must be designed to handle peak traffic, not average load.
 
 ### Read Bandwidth
 ```
-580 QPS × 0.6 KB ≈ 348 KB/sec ≈ ~0.35 MB/sec
+580 QPS × 0.6 KB ≈ 348 KB/sec ≈ 0.35 MB/sec
 ```
 
 ### Write Bandwidth
