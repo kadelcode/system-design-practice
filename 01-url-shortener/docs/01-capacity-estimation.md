@@ -40,8 +40,8 @@ Since we don't have real data, we define reasonable assumptions:
 5. Average URL size:
     - Original URL: 500 bytes
     - Short code: 10 bytes
-    - Metadata (timestamps, etc.): 100 bytes
-    - Total per record ~ 610 bytes (~0.6 KB)
+    - Metadata (timestamps, etc.): 90 bytes
+    - Total per record ~ 600 bytes (0.6 KB)
 
 6. Data retention period:
     - Assume 5 years (URLs are rarely deleted)
