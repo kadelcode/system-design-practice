@@ -67,7 +67,11 @@ Define the main components of the system and how they interact to handle URL sho
 - Most traffic targets a small subset of URLs
 
 **Cache Strategy:**
-- Read-through cache
+- Cache-aside strategy (lazy loading)
+    - Application first checks cache
+    - On cache miss, data is fetched from the database
+    - Cache is updated with the fetched data
+    - This provides flexibility and better control over cache behavior
 - Cache popular URLs (~20%)
 
 ---
