@@ -142,7 +142,7 @@ Define the main components of the system and how they interact to handle URL sho
 
 ## Architecture Diagram
 
-![URL Shortner Architecture Diagram](../../assets/images/URL%20Shortener%20Architecture.drawio.png)
+![URL Shortener Architecture Diagram](../../assets/images/URL%20Shortener%20Architecture.drawio.png)
 
 ---
 
