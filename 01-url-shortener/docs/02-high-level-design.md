@@ -134,7 +134,9 @@ Define the main components of the system and how they interact to handle URL sho
     - If HIT -> return original URL
     - If MISS -> query Database
 - Store result in Cache (if from DB)
-- Redirect user to original URL
+- Redirect user to original URL (via HTTP 301 or 302)
+    - 301 (Permanenet): Enables browser caching and improves performance
+    - 302 (Temporary): Preferred when tracking real-time analytics (ensures requests always hit server)
 
 ---
 
