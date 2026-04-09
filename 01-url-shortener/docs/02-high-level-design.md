@@ -107,7 +107,9 @@ Define the main components of the system and how they interact to handle URL sho
 - Generate unique short codes
 
 **Options:**
-- Auto-increment IDs + Base62 encoding
+- Non-sequential unique IDs (e.g., Snowflake, UUID) + Base62 encoding
+    - Prevents predictability and enumeration attacks
+    - Supports distributed ID generation at scale
 - Distributed ID generator (e.g., Snowflake)
 
 ---
