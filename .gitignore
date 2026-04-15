@@ -52,8 +52,8 @@ docker-data/
 # Diagram Tool Files (Optional)
 # -----------------------------
 # If you ONLY want exported images (recommended for GitHub)
-*.drawio
-*.dio
+# *.drawio
+# *.dio
 
 # -----------------------------
 # Temporary / Misc
