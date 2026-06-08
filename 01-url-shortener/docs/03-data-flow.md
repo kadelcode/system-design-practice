@@ -19,7 +19,7 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# Date Flow - URL Shortener
+# Data Flow - URL Shortener
 
 ## Goal
 Explain how data moves through the system for both write (shortening) and read (redirect) operations, with a focus on cache usage.
