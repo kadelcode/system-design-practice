@@ -177,7 +177,7 @@ sequenceDiagram
 - System is **read-heavy (≈10:1)** -> caching is critical
 - Cache significantly reduces database load
 - Cache-aside provides better control over consistency
-- Redirect latency is minized on cache hits
+- Redirect latency is minimized on cache hits
 
 ---
 
