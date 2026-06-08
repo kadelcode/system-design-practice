@@ -185,7 +185,7 @@ sequenceDiagram
 
 | Decision             | Benefit                  | Trade-off                 |
 |----------------------|--------------------------|---------------------------|
-| Cache-first strategy | Faster reads             | Possiblie state data      |
+| Cache-first strategy | Faster reads             | Possible stale data      |
 | 301 Redirect         | Better performance & SEO | Harder to track analytics |
 | 302 Redirect         | Better tracking          | Slightly slower           |
 
