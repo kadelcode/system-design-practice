@@ -139,9 +139,6 @@ sequenceDiagram
 ## Read Flow – Sequence Diagram
 
 
-```md
-## Read Flow – Sequence Diagram
-
 ```mermaid
 sequenceDiagram
     participant User
