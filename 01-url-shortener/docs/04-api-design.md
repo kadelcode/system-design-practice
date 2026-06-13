@@ -137,7 +137,7 @@ GET /aB3xYz
 
 #### Headers
 ```
-Location: https://www.example.com/article/system-design/url-shortener
+Location: https://www.example.com/articles/system-design/url-shortener
 ```
 
 #### Behavior
