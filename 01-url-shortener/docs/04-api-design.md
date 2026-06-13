@@ -26,6 +26,9 @@
       - [Status](#status-2)
       - [Body](#body-2)
   - [HTTP Status Codes](#http-status-codes)
+  - [Rate Limiting](#rate-limiting)
+    - [Status](#status-3)
+    - [Response](#response)
   - [Resource Model](#resource-model)
     - [URL Mapping](#url-mapping)
   - [Future Enhancements](#future-enhancements)
@@ -166,13 +169,33 @@ The client is automatically redirected to the original URL.
 
 ## HTTP Status Codes
 
-| Status Code | Meaning                        |
-|-------------|--------------------------------|
-| 201         | Short URL created successfully |
-| 302         | Redirect to original URL       |
-| 400         | Invalid request                |
-| 404         | Short URL not found            |
-| 500         | Internal server error          |
+| Status Code | Meaning                          |
+|-------------|----------------------------------|
+| 201         | Short URL created successfully   |
+| 302         | Redirect to original URL         |
+| 400         | Invalid request                  |
+| 404         | Short URL not found              |
+| 429         | Too many requests (rate limited) |
+| 500         | Internal server error            |
+
+## Rate Limiting
+
+### Status
+
+```http
+429 Too Many Requests
+```
+
+### Response
+
+```
+{
+    "error": {
+        "code": "RATE_LIMIT_EXCEEDED",
+        "message": "Too many requests. Please try again later."
+    }
+}
+```
 
 ## Resource Model
 
