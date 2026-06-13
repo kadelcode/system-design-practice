@@ -145,14 +145,24 @@ GET /aB3xYz
 #### Headers
 ```
 Location: https://www.example.com/articles/system-design/url-shortener
+Cache-Control: no-store
 ```
 
 #### Behavior
 
 The client is automatically redirected to the original URL.
 
-**Design Decision:** The service uses **302 Found** instead of **301 Moved Permanently**. While 301 can improve performance through browser caching, 302 ensures that every request reaches the URL shortener service, enabling accurate click tracking, analytics collection, and future features such as abuse detection and rate limiting.
+**Design Decision:** The service uses **302 Found** instead of **301 Moved Permanently**.
 
+While 301 can improve performance through browser caching, 302 provides better support for click analytics because clients are less likely to permanently cache the redirect.
+
+To ensure accurate analytics and abuse detection, redirect responses should include cache-control headers that discourage browser and intermediary caching.
+
+Example:
+
+```http
+Cache-Control: no-store
+```
 
 ### URL Not Found
 
