@@ -13,8 +13,9 @@
     - [Success Response](#success-response)
       - [Status](#status)
       - [Body](#body-1)
-    - [Validation Errors](#validation-errors)
+    - [Client Errors](#client-errors)
       - [Invalid URL](#invalid-url)
+    - [Server Errors](#server-errors)
       - [Internal Error](#internal-error)
   - [2. Redirect to Original URL](#2-redirect-to-original-url)
     - [Endpoint](#endpoint-1)
@@ -91,7 +92,7 @@ Location: https://short.ly/aB3xYz
 }
 ```
 
-### Validation Errors
+### Client Errors
 
 #### Invalid URL
 
@@ -104,6 +105,8 @@ Location: https://short.ly/aB3xYz
     }
 }
 ```
+
+### Server Errors
 
 #### Internal Error
 
