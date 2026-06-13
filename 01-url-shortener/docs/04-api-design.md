@@ -78,6 +78,7 @@ Content-Type: application/json
 #### Status
 ```
 201 Created
+Location: https://short.ly/aB3xYz
 ```
 
 #### Body
