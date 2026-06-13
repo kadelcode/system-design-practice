@@ -2,7 +2,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Date Flow - URL Shortener](#date-flow---url-shortener)
+- [Data Flow - URL Shortener](#data-flow---url-shortener)
   - [Goal](#goal)
   - [1. Write Flow (URL Shortening)](#1-write-flow-url-shortening)
     - [Steps](#steps)
