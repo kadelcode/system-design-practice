@@ -287,10 +287,11 @@ Move analytics into a dedicated table:
 ```sql
 CREATE TABLE url_click_events (
     id BIGSERIAL PRIMARY KEY,
-    short_id VARCHAR(10),
-    clicked_at TIMESTAMP
+    short_id VARCHAR(10) REFERENCES url_mappings(short_id) ON DELETE CASCADE,
+    clicked_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 );
-```
+
+CREATE INDEX idx_url_click_events_short_id ON url_click_events(short_id);
 
 Benefits:
 
