@@ -88,9 +88,9 @@ CREATE TABLE url_mappings (
     short_id        VARCHAR(10) PRIMARY KEY,
     original_url    TEXT NOT NULL,
     click_count     BIGINT DEFAULT 0,
-    expires_at      TIMESTAMP NULL,
-    created_at      TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    updated_at      TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+    expires_at      TIMESTAMP WITH TIME ZONE NULL,
+    created_at      TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at      TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 ```
 
